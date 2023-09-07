@@ -70,7 +70,7 @@ const Portfolio = () => {
                 selectTab === "app-development" ? "bg-smallTextColor text-white" : ""
               }`}
             >
-              Development
+              Product
             </button>
             <button
               onClick={() => handleTabChange("app-testing")}
@@ -78,7 +78,7 @@ const Portfolio = () => {
                 selectTab === "app-testing" ? "bg-smallTextColor text-white" : ""
               }`}
             >
-              Testing
+              Report
             </button>
           </div>
           <div className="flex items-center gap-4 flex-wrap mt-12">
