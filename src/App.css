@@ -24,3 +24,28 @@ body {
 section {
   padding: 50px 0;
 }
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+/* App.css */
+
+/* Gaya ketika pointer mouse berada di atas elemen fitur */
+.dt-container:hover {
+  cursor: pointer;
+}
+
+.dt-container:hover .dt-icon {
+  color: white; /* Mengubah warna icon menjadi putih */
+}
+
+.dt-container:hover .dt-name {
+  color: #14b8a6; /* Mengubah warna nama fitur menjadi primaryColor */
+}
+
+.dt-container:hover .dt-description {
+  color: #14b8a6; /* Mengubah warna deskripsi menjadi primaryColor */
+}
+

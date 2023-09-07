@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         primaryColor: "#14b8a6",
         headingColor: "#081e21",
-        smallTextColor: "#193256"
+        smallTextColor: "#193256",
+        alertColor: "#dc2626",
       }
     },
   },
