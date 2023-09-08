@@ -8,6 +8,7 @@ module.exports = {
         headingColor: "#081e21",
         smallTextColor: "#193256",
         alertColor: "#dc2626",
+        notifColor: "#2563eb",
       }
     },
   },

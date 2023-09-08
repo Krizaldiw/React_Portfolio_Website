@@ -1,40 +1,70 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
-const Header = () => {
+const Header = ({ isModalOpen }) => {
+  const headerRef = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+  
+    const targetAttr = e.target.getAttribute("href");
+    
+    // Tambahkan pernyataan ini untuk memeriksa nilai targetAttr
+    console.log("targetAttr:", targetAttr);
+  
+    const targetElement = document.querySelector(targetAttr);
+  
+    // Tambahkan pernyataan ini untuk memeriksa hasil pencarian
+    console.log("targetElement:", targetElement);
+  
+    if (targetElement) {
+      const location = targetElement.offsetTop;
+  
+      window.scrollTo({
+        top: location - 80,
+        left: 0,
+      });
+    }
+  };  
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="w-full h-[80px] leading-[80px] flex items-center">
+    <header ref = {headerRef} className ={`w-full h-[80px] leading-[80px] flex items-center sticky__header ${
+        isModalOpen ? "hidden" : "" // Menyembunyikan header saat modal terbuka
+      }`} style={{ zIndex: isModalOpen ? 5 : 10 }}>
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-[10px]">
             <span className="w-[35px] h-[35px] bg-primaryColor text-white text-[16px] font-[600] rounded-full flex items-center justify-center">
               KR
             </span>
-            {/* <div className='leading-[20px]'>
-                        <h2 className='text-xl text-smallTextColor font-[700]'>Khalif</h2>
-                        <p className='text-smallTextColor text-[14px] font-[500]'>personal</p>
-                    </div> */}
           </div>
 
           {/* Menu Start */}
-          <div className="menu">
+          <div className={`menu ${isMenuOpen ? 'show__menu' : ''}`} ref={menuRef} onClick={toggleMenu}>
             <ul className="flex items-center gap-10">
               <li>
-                <a className="text-smallTextColor font-[600]" href="#about">
+                <a onClick ={handleClick} className="text-smallTextColor font-[600]" href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a className="text-smallTextColor font-[600]" href="#services">
+                <a onClick ={handleClick} className="text-smallTextColor font-[600]" href="#services">
                   Services
                 </a>
               </li>
               <li>
-                <a className="text-smallTextColor font-[600]" href="#portfolio">
+                <a onClick ={handleClick} className="text-smallTextColor font-[600]" href="#portfolio">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a className="text-smallTextColor font-[600]" href="#contact">
+                <a onClick ={handleClick} className="text-smallTextColor font-[600]" href="#contact">
                   Contact
                 </a>
               </li>
@@ -52,8 +82,12 @@ const Header = () => {
                 <i class="ri-send-plane-line"></i> Let's Talk
               </a>
             </button>
-            <span className="text-2xl text-smallTextColor md:hidden cursor-pointer">
-              <i class="ri-menu-line"></i>
+            <span onClick={toggleMenu} className="text-2xl text-smallTextColor md:hidden cursor-pointer">
+              {isMenuOpen ? (
+                <i class="ri-close-fill"></i> // Tampilkan ikon close jika menu terbuka
+              ) : (
+                <i class="ri-menu-line"></i> // Tampilkan ikon menu jika menu tertutup
+              )}
             </span>
           </div>
         </div>

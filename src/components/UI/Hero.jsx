@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import heroImg from "../../assets/images/hero.svg";
 // import CountUp from 'react-countup/build/CountUp'
 
 const Hero = () => {
-  const [showNotification, setShowNotification] = useState(false);
+//   const [showNotification, setShowNotification] = useState(false);
 
-  // Fungsi untuk menampilkan notifikasi
-  const showPortfolioNotification = () => {
-    setShowNotification(true);
+//   // Fungsi untuk menampilkan notifikasi
+//   const showPortfolioNotification = () => {
+//     setShowNotification(true);
 
-    // Set timeout untuk menyembunyikan notifikasi setelah beberapa detik
-    setTimeout(() => {
-      setShowNotification(false);
-    }, 5000); // Misalnya, notifikasi akan disembunyikan setelah 5 detik
-  };
+//     // Set timeout untuk menyembunyikan notifikasi setelah beberapa detik
+//     setTimeout(() => {
+//       setShowNotification(false);
+//     }, 5000); // Misalnya, notifikasi akan disembunyikan setelah 5 detik
+//   };
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
@@ -66,20 +66,20 @@ const Hero = () => {
             >
               <a href="mailto:muhkhalifrizaldiw@gmail.com?subject=Hi%20Khalif%20Rizaldi&body=Hi%20Khalif%20Rizaldi%2C%20nice%20to%20meet%20you%2C%20may%20I%20know%20more%20about%20you%3F">
                 <button
-                  onClick={showPortfolioNotification}
                   className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
                 >
-                  <i class="ri-mail-line"></i> Hire Me
+                  <i className="ri-mail-line"></i> Hire Me
                 </button>
-                {/* Notifikasi */}
-                {showNotification && (
-                <div className="fixed top-4 right-4 bg-primaryColor shadow-lg p-4 rounded-lg flex items-center">
-                  <i className="ri-user-smile-line text-white text-xl mr-2"></i>
-                  <p className="text-white">Thank you for contact me</p>
-                </div>
-                
-                )}
               </a>
+
+              {/* Notifikasi */}
+              {/* {showNotification && (
+                <div className="fixed top-4 right-4 bg-notifColor shadow-lg p-4 rounded-lg flex items-center">
+                  <i className="ri-user-smile-line text-white text-xl mr-2"></i>
+                  <p className="text-white">Thank you for contacting me</p>
+                </div>
+              )} */}
+
               <a
                 href="https://drive.google.com/file/d/1O6zfpcbBwCTgEUgIvLxFjOHQqwrvUPao/view?usp=sharing"
                 target="_blank"
