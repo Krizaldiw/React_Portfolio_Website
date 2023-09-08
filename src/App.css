@@ -61,6 +61,11 @@ section {
   z-index: 99;
 }
 
+.button-container:hover {
+  visibility: visible;
+  opacity: 1; /* Menampilkan tombol saat mengarahkan kursor */
+}
+
 @media only screen and (max-width: 768px) {
   .menu {
     width: 100%;
@@ -71,6 +76,7 @@ section {
     background: #00000084;
     z-index: 100;
     display: none;
+    
   }
   .menu ul{
     width: 15rem;
@@ -88,4 +94,38 @@ section {
   .show__menu{
     display: block;
   }
+  .container {
+    padding: 0 1rem; /* Adjust the padding for smaller screens */
+  }
+  .flex-col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .mb-5 {
+    margin-bottom: 1rem;
+  }
+  .mb-20 {
+    margin-bottom: 2rem;
+  }
+  /* Additional responsive styles */
+  .text-white {
+    color: #ccc; /* Change text color for better visibility on dark background */
+  }
+
+  .container {
+    max-width: 100%; /* Ensure content stretches to full width on smaller screens */
+  }
+
+  .sm\:w-1\/2 {
+    width: 100%; /* Make the column full width on smaller screens */
+  }
+  .button-container:hover {
+    visibility: visible;
+    opacity: 1; /* Menampilkan tombol saat mengarahkan kursor */
+  }  
 }

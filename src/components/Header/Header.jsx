@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
-const Header = () => {
+const Header = ({ isModalOpen }) => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
 
@@ -26,24 +26,27 @@ const Header = () => {
       });
     }
   };  
-  const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <header ref = {headerRef} className="w-full h-[80px] leading-[80px] flex items-center">
+    <header ref = {headerRef} className ={`w-full h-[80px] leading-[80px] flex items-center sticky__header ${
+        isModalOpen ? "hidden" : "" // Menyembunyikan header saat modal terbuka
+      }`} style={{ zIndex: isModalOpen ? 5 : 10 }}>
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-[10px]">
             <span className="w-[35px] h-[35px] bg-primaryColor text-white text-[16px] font-[600] rounded-full flex items-center justify-center">
               KR
             </span>
-            {/* <div className='leading-[20px]'>
-                        <h2 className='text-xl text-smallTextColor font-[700]'>Khalif</h2>
-                        <p className='text-smallTextColor text-[14px] font-[500]'>personal</p>
-                    </div> */}
           </div>
 
           {/* Menu Start */}
-          <div className="menu" ref={menuRef} onClick={toggleMenu}>
+          <div className={`menu ${isMenuOpen ? 'show__menu' : ''}`} ref={menuRef} onClick={toggleMenu}>
             <ul className="flex items-center gap-10">
               <li>
                 <a onClick ={handleClick} className="text-smallTextColor font-[600]" href="#about">
@@ -80,7 +83,11 @@ const Header = () => {
               </a>
             </button>
             <span onClick={toggleMenu} className="text-2xl text-smallTextColor md:hidden cursor-pointer">
-              <i class="ri-menu-line"></i>
+              {isMenuOpen ? (
+                <i class="ri-close-fill"></i> // Tampilkan ikon close jika menu terbuka
+              ) : (
+                <i class="ri-menu-line"></i> // Tampilkan ikon menu jika menu tertutup
+              )}
             </span>
           </div>
         </div>
