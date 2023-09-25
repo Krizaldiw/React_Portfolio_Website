@@ -36,7 +36,7 @@ const portfolios = [
     category: "Development",
     title: "Dashboard Suite - File Storage",
     description:
-      "Merchant Dashboard is a pla orm or interface specially designed for merchants or business owners working with a par cular service or product.",
+      "Merchant Dashboard is a platform or interface specially designed for merchants or business owners working with a particular service or product.",
     technologies: ["Postman", "Jira", "K6", "GitHub"],
     siteUrl: "#",
   },
@@ -64,7 +64,7 @@ const portfolios = [
     id: "05",
     imgUrl: portfolioImg12,
     category: "Development",
-    title: "IT Del Registration",
+    title: "ADF - IT Del Registration",
     description:
       "Privy IT Del Registration - Presence is a program that allows IT Del Students to register for and attendance college studying",
     technologies: ["Postman", "K6", "Node.js", "Jira", "Jest", "Reporter"],
@@ -85,7 +85,7 @@ const portfolios = [
     id: "07",
     imgUrl: portfolioImg14,
     category: "Development",
-    title: "Employee Record Mobile",
+    title: "EAR Mobile App",
     description:
       "A mobile-based employee attendance record is an electronic system that allows employees to clock in and out of work using their mobile phones. ",
     technologies: ["K6", "NodeJS", "Jest", "Postman", "GitLab"],
@@ -95,7 +95,7 @@ const portfolios = [
     id: "08",
     imgUrl: portfolioImg15,
     category: "Development",
-    title: "Employee Record Dashboard",
+    title: "EAR Web Dashboard",
     description:
       "This system can be used to track employee attendance, hours worked, and breaks taken. It can also be used to generate reports on employee attendance and productivity.",
     technologies: ["K6", "NodeJS", "Jest", "Postman", "GitLab"],
@@ -128,7 +128,7 @@ const portfolios = [
     title: "Simple Rest API NodeJS - ExpressJS",
     description:
       "Simple Rest API using NodeJS-Express MongoDB and Testing Rest API using Postman-Newman",
-    technologies: ["Node.js", "MongoDB","ExpressJS", "Newman", "Nodemon", "GitHub"],
+    technologies: ["Node.js", "MongoDB", "ExpressJS", "Newman", "Nodemon", "GitHub"],
     siteUrl: "https://github.com/Krizaldiw/NodeJS_MongoDB_Newman.git",
   },
   {

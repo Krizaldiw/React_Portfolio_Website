@@ -4,12 +4,9 @@ This application develop use ReactJS, TailwindCSS, and Deploy use Netlify
 
 ### Step by step
 
-* Create Directory
 * Install NodeJS
-* Install ReactJS
-* Install TailwindCSS
-* Install RemixIcon
-* Live Website : [https://khalif-rizaldi.netlify.app/](https://khalif-rizaldi.netlify.app/)
+
+* Create Directory
 
 ```bash
 mkdir my-web-project
@@ -44,6 +41,9 @@ npm start
 ```bash
 npm run build
 ```
+
+* Live Website : [https://khalif-rizaldi.netlify.app/](https://khalif-rizaldi.netlify.app/)
+
 
 ## NOTE
 
