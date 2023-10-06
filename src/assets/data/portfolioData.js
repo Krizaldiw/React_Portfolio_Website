@@ -75,9 +75,9 @@ const portfolios = [
     id: "06",
     imgUrl: portfolioImg13,
     category: "Development",
-    title: "Liveness OnBoarding - Bank Raya",
+    title: "Liveness OnBoarding",
     description:
-      "The PrivyPass Liveness Onboarding service is a secure and convenient way for Bank Raya to verify the identity of its customers. The service is also compliant with Indonesian regulations on electronic Know Your Customer (e-KYC).",
+      "The PrivyPass Liveness Onboarding service is a secure and convenient way for Privy Merchant to verify the identity of its customers. The service is also compliant with Indonesian regulations on electronic Know Your Customer (e-KYC).",
     technologies: ["Postman", "Sheet", "Manual Testing"],
     siteUrl: "https://privy.id/privypass",
   },
@@ -125,7 +125,7 @@ const portfolios = [
     id: "11",
     imgUrl: portfolioImg18,
     category: "Development",
-    title: "Simple Rest API NodeJS - ExpressJS",
+    title: "Rest API NodeJS - ExpressJS",
     description:
       "Simple Rest API using NodeJS-Express MongoDB and Testing Rest API using Postman-Newman",
     technologies: ["Node.js", "MongoDB", "ExpressJS", "Newman", "Nodemon", "GitHub"],
