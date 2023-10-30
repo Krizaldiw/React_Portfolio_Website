@@ -34,7 +34,7 @@ const Hero = () => {
             >
               Iam <span style={{ color: "#14b8a6" }}>Khalif Rizaldi</span>
               <br />
-              Software Engineer in Test (QA) ex{" "}
+              Software Development Engineer in Test ex{" "}
               <a
                 href="https://privy.id/id"
                 style={{ color: "#dc2626", cursor: "pointer" }}
