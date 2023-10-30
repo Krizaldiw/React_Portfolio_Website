@@ -52,7 +52,7 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="text-headingColor font-[800] text-[2.4rem] mb-5">
-            What I Do as SET - QA ?
+            What I Do as SDET - QA ?
           </p>
           {/* <p className="mt-6 text-lg leading-8 text-gray-600">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
