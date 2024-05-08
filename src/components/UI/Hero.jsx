@@ -34,13 +34,7 @@ const Hero = () => {
             >
               Iam <span style={{ color: "#14b8a6" }}>Khalif Rizaldi</span>
               <br />
-              Software Development Engineer in Test ex{" "}
-              <a
-                href="https://privy.id/id"
-                style={{ color: "#dc2626", cursor: "pointer" }}
-              >
-                Privy
-              </a>
+              Software Development Engineer in Test
             </h1>
             <div
               data-aos="fade-up"

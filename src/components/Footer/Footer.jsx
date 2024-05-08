@@ -48,7 +48,7 @@ const Footer = () => {
                 <i className="ri-mail-fill"></i>
               </a>
               <a
-                href="https://t.me/Krizaldiw?text=Halo%20Khalif%20Rizaldi%2C%20Bagaimana%20Kabar%20mu%20%3F%20aku%20butuh%20bantuan%20nih"
+                href="https://t.me/Krizaldiw?text=Halo%20Khalif"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-500 text-xl hover:text-primaryColor"
