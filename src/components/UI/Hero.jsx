@@ -48,7 +48,7 @@ const Hero = () => {
                 software development with 1 - 2 years experiences. Skilled in
                 test case creation, management, execution, and reporting for
                 Mobile and Web Applications my skill include but are not limited
-                to Web Development and Data Analysis with ongoing commitment to
+                to Web Development and Software Engineering with ongoing commitment to
                 professional growth.
               </p>
             </div>
