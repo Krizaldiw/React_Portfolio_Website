@@ -48,7 +48,7 @@ const Experiences = () => {
                     </div>
                     <div className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center">
                         <figure>
-                            <img src={backendImg} alt="" />
+                            <img src={frontendImg} alt="" />
                         </figure>
                     </div>
                   </div>
