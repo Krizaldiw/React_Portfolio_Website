@@ -34,7 +34,7 @@ const Hero = () => {
             >
               Iam <span style={{ color: "#14b8a6" }}>Khalif Rizaldi</span>
               <br />
-              Software Development Engineer in Test
+              Software Development Engineer in Test at <span style={{ color: "#06b6d4" }}>NICEPAY</span>
             </h1>
             <div
               data-aos="fade-up"

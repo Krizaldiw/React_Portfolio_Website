@@ -33,22 +33,22 @@ const Experiences = () => {
                           className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150 mx-auto sm:mx-0" // Tambahkan kelas "mx-auto" di sini
                         >
                           <h5 className="text-primaryColor font-[600] mb-3 group-hover:text-white group-hover:font-[600] text-2xl">
-                            Research Assistant
+                            QA Engineer 
                           </h5>
                           <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                            September 2021 - July 2022
-                            Teknik Informatika (UMS)
-                            Surakarta, Indonesia
+                            October 2023 - Present<br />
+                            PT. Ionpay Network (NICEPAY)<br />
+                            DKI Jakarta, Indonesia
                           </p><br />
                           <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                            Investigated and Analysis the most frequently discussed keywords React JavaScript library. Collaborate with Ph.D Students at Nara Institute Of Science and Technology (Japan) 
+                            Contributed and Performing Develop Automation Testing Code For Direct Debit, E-Wallet, Virtual Account and Enhancement Payment Gateway Project. 
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center">
                         <figure>
-                            <img src={frontendImg} alt="" />
+                            <img src={backendImg} alt="" />
                         </figure>
                     </div>
                   </div>
@@ -68,8 +68,8 @@ const Experiences = () => {
                             QA Engineer
                           </h5>
                           <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                            October 2022 - September 2023
-                            PT. Privy Identitas Digital (Privy)
+                            October 2022 - September 2023<br />
+                            PT. Privy Identitas Digital (Privy)<br />
                             Yogyakarta, Indonesia
                           </p><br />
                           <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
@@ -100,12 +100,12 @@ const Experiences = () => {
                             Research Assistant
                           </h5>
                           <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                            September 2021 - July 2022
-                            Teknik Informatika (UMS)
+                            September 2021 - July 2022<br />
+                            Teknik Informatika (UMS)<br />
                             Surakarta, Indonesia
                           </p><br />
                           <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                            Investigated and Analysis the most frequently discussed keywords React JavaScript library. Collaborate with Ph.D Students at Nara Institute Of Science and Technology (Japan) 
+                            Investigated and Analysis the most frequently discussed keywords React JavaScript library. Collaborate with Ph.D Students from Nara Institute Of Science and Technology (Japan) 
                           </p>
                         </div>
                       </div>

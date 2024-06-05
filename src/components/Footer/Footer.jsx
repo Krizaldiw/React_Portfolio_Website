@@ -14,7 +14,7 @@ const Footer = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Do you want to collaborate with me?{" "}
+              want to collaborate?{" "}
               <i className="ri-chat-smile-line"></i>
             </span>
           </h2>
@@ -47,14 +47,14 @@ const Footer = () => {
               >
                 <i className="ri-mail-fill"></i>
               </a>
-              <a
+              {/* <a
                 href="https://t.me/Krizaldiw?text=Halo%20Khalif"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-500 text-xl hover:text-primaryColor"
               >
                 <i className="ri-send-plane-fill"></i>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="mt-4 text-gray-500 text-xs">
