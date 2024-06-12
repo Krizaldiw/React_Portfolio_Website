@@ -105,7 +105,7 @@ const Experiences = () => {
                             Surakarta, Indonesia
                           </p><br />
                           <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                            Investigated and Analysis the most frequently discussed keywords React JavaScript library. Collaborate with Ph.D Students from Nara Institute Of Science and Technology (Japan) 
+                            Investigated and Analysis the most frequently discussed keywords React JavaScript library. Under the guidance and supervision of Dr. Eng. Yusuf Sulistyo Nugroho, S.T., M.Eng  
                           </p>
                         </div>
                       </div>
